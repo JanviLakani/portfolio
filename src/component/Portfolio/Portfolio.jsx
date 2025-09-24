@@ -18,6 +18,13 @@ function Portfolio(props) {
       <p className="text-3xl font-medium,">font-medium</p>
       <p className="text-4xl font-black">font-black</p>
 
+      <div className="text-pink-600 bg-amber-500 h-10 w-20 mt-4 font-thin hover:text-sm">
+        new project
+      </div>
+      <div className="text-blue-200 bg-amber-900 hover:text-2xl hover:bg-amber-400 mt-4">
+        hello tailwind
+      </div>
+
       <h2 className="text-red-500 text-4xl mt-8 ">Font Weight only</h2>
       <p className="font-semibold">font-semibold</p>
       <p className="font-normal">font-normal</p>
@@ -113,7 +120,7 @@ function Portfolio(props) {
         <div className="bg-green-400 p-4">grid 3</div>
         <div className="bg-amber-300 col-span-2 p-4">grid 4</div>
         <div className="bg-amber-300 col-span-1 p-4">grid 5</div>
-        <div className="bg-amber-300 grid-cols-3 p-4">grid 6</div>
+        <div className="bg-amber-300 p-4 col-span-3">grid 6</div>
       </div>
 
       <h2 className="text-red-600 text-4xl mt-8">Text Align</h2>
@@ -247,7 +254,7 @@ function Portfolio(props) {
       <div class="size-18 rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>
       <div class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div>
 
-        <h2 className="text-red-600 text-4xl mt-8"> Transform</h2>
+      <h2 className="text-red-600 text-4xl mt-8"> Transform</h2>
 
       <div className="bg-blue-400 w-20 h-20 scale-75">Scale 75%</div>
       <div className="bg-red-400 w-20 h-20 scale-100">Scale 100%</div>
@@ -278,24 +285,64 @@ function Portfolio(props) {
       <button className="bg-red-300 text-white p-4 mt-4 duration-500 ease-in-out hover:bg-red-500">
         button Transition
       </button>
-  <h2 className="text-red-600 text-4xl mt-8"> Overflow</h2>
+      <h2 className="text-red-600 text-4xl mt-8"> Overflow</h2>
       <div className="w-40 h-20 bg-gray-200 overflow-hidden ">
-  Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus consequatur? Iste consequuntur veritatis odit provident eveniet? Libero perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam reiciendis.
-</div>
+        Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus
+        consequatur? Iste consequuntur veritatis odit provident eveniet? Libero
+        perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam
+        reiciendis.
+      </div>
 
- <div className="w-80 h-20 bg-green-200 overflow-scroll">
-  Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus consequatur? Iste consequuntur veritatis odit provident eveniet? Libero perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam reiciendis. lorem1000
-</div>
-{/* not wor scroll  */}
+      <div className="w-80 h-20 bg-green-200 overflow-scroll">
+        Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus
+        consequatur? Iste consequuntur veritatis odit provident eveniet? Libero
+        perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam
+        reiciendis. lorem1000
+      </div>
+      {/* not wor scroll  */}
 
-<div className="w-180 h-50 bg-green-200 overflow-x-auto">
-  Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus consequatur? Iste consequuntur veritatis odit provident eveniet? Libero perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam reiciendis. lorem1000 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum laboriosam quia exercitationem beatae. Mollitia sit impedit, totam alias enim voluptas sapiente deserunt sequi voluptate, doloremque dolorum nostrum similique harum delectus blanditiis excepturi eos voluptates ut minus error rem ipsum omnis quas? Earum, aspernatur similique? Veniam sequi nisi eius quia magni suscipit ex dolore officiis ea id reiciendis, ducimus ipsa blanditiis quaerat, quos nihil natus voluptatibus non illo, voluptate possimus. Doloremque delectus quo dolores temporibus, ullam recusandae ducimus ratione facilis, libero ipsa eveniet sit praesentium repellendus nobis dignissimos doloribus. Facere esse soluta eius id delectus magni perspiciatis! Non tempora facilis quae!
-</div>
+      <div className="w-180 h-50 bg-green-200 overflow-x-auto">
+        Overflow hidden: Ye text cut hoga agar box se bada hua Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nihil, eveniet. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Corrupti natus sit minus
+        consequatur? Iste consequuntur veritatis odit provident eveniet? Libero
+        perspiciatis enim omnis eos commodi accusantium dolor quasi laboriosam
+        reiciendis. lorem1000 Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Eum laboriosam quia exercitationem beatae. Mollitia
+        sit impedit, totam alias enim voluptas sapiente deserunt sequi
+        voluptate, doloremque dolorum nostrum similique harum delectus
+        blanditiis excepturi eos voluptates ut minus error rem ipsum omnis quas?
+        Earum, aspernatur similique? Veniam sequi nisi eius quia magni suscipit
+        ex dolore officiis ea id reiciendis, ducimus ipsa blanditiis quaerat,
+        quos nihil natus voluptatibus non illo, voluptate possimus. Doloremque
+        delectus quo dolores temporibus, ullam recusandae ducimus ratione
+        facilis, libero ipsa eveniet sit praesentium repellendus nobis
+        dignissimos doloribus. Facere esse soluta eius id delectus magni
+        perspiciatis! Non tempora facilis quae!
+      </div>
 
+      <div class="h-14 bg-linear-to-r from-cyan-500 to-blue-500">ascasc</div>
 
+      <h2 className="text-red-600 text-4xl mt-8"> position</h2>
 
+      <div className="static bg-pink-500 h-72 w-72 border-4">
+        <p>static work </p>
+        <div className="absolute bottom-0 left-0 border-2">
+           <p>Absolute child</p>
+        </div>
+      </div>
 
-</div>
+      <div class="static ...">  
+        <p>Static parent</p>
+        <div class="absolute bottom-0 left-0 ...">
+          <p>Absolute child</p>
+        </div>
+      </div>
+    </div>
   );
 }
 
