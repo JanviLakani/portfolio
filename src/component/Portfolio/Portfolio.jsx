@@ -347,3 +347,31 @@ function Portfolio(props) {
 }
 
 export default Portfolio;
+
+
+{
+  /* <div className="flex justify-center items-center space-x">  */
+}
+{
+  /* <a href="">
+            <img src={logo} alt="logo-img" />
+          </a> */
+}
+
+{
+  /* <nav>
+             <ul>
+              {
+                navLinks.map((v,i) => (
+                  <li key={i}>
+                    <a href={v.link}>{v.title}</a>
+                  </li>
+                ))
+              }
+             </ul>
+        </nav> */
+}
+
+{
+  /* </div>  */
+}

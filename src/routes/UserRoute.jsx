@@ -8,7 +8,7 @@ function UserRoute(props) {
 
   const theme = useContext(ThemeContext);
   return (
-    <div className={theme.theme}>
+    <div className={`${theme.theme} font-lato bg-red-500 ` }>
       <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
