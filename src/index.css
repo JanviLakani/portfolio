@@ -10,10 +10,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme{
-  --primary-color: #77ff33;
-  --dark-primary-color: #ff6600;
+  /* --primary-color: #77ff33;  only check karva mukel hto */
+  /* --primary-color: #000000;
+  --dark-primary-color: #ffffff; */
+   --primary-color: #ffffff;
+  --dark-primary-color: #000000;
+   /* --dark-primary-color: #ff6600;  */
   --font-poppins :"Poppins", serif;
   --font-lato :"Lato", sans-serif;
+  
   
 
 }
