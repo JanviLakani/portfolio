@@ -31,6 +31,7 @@
 </a> */}
 
 import React from "react";
+import Project from "../../component/Project/Project";
 
 function Home(props) {
   return (
@@ -54,9 +55,9 @@ function Home(props) {
             <video
               // width="400"
               // height="350"
-              autoPlay
-              muted
-              loop
+              // autoPlay
+              // muted
+              // loop
               // autoplay="true"
               className="w-full h-[250px] md:h-[500px] lg:h-[400px] rounded-2xl object-cover"
             >
@@ -97,6 +98,8 @@ function Home(props) {
           jljljl
         </div> */}
       </div>
+
+      <Project/>
 
       {/* <div className="flex mt-10 bg-gray-700 text-white rounded-full  justify-between px-8 py-3">
         <span>Portfolio</span>
