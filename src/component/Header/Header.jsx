@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import logo from "../../assets/img/portpholio-white-logo.webp";
-// import darkLogo from "../../assets/img/logo-dark.webp"
+import darkLogo from "../../assets/img/logo-dark.webp";
 import { ThemeContext } from "../../context/ThemeContext";
 import { MdSunny } from "react-icons/md";
 import { GoMoon } from "react-icons/go";
@@ -29,11 +29,8 @@ function Header(props) {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex justify-between space-x-20 xl:space-x-30">
           <a href="" className="text-2xl">
-            <img src={logo} alt="logo-img" />
-             {/* <img 
-             src= {theme.theme === "light" ? {darkLogo} :{logo}}
-              alt="" 
-              /> */}
+            {/* <img src={logo} alt="logo-img" /> */}
+            <img src={theme.theme === "light" ? darkLogo : logo} alt="logo" />
           </a>
 
           <nav>
@@ -47,7 +44,8 @@ function Header(props) {
           </nav>
         </div>
 
-        <div className="flex justify-between items-center space-x-6 xl:space-x-7">
+        {/* <div className="flex justify-between items-center space-x-6 xl:space-x-7"> */}
+        <div className="flex justify-between items-center gap-3">
           {/* <h1  className="text-white">janvi</h1> */}
 
           <a href="#" onClick={() => theme.toogleTheme(theme.theme)}>
@@ -73,9 +71,9 @@ function Header(props) {
       </div>
 
       <div
-        className={`lg:hidden w-80 h-screen fixed top-0 right-0 bg-black transform ${
+        className={`lg:hidden w-80 h-screen fixed top-0 right-0 bg-black transform transition-transform duration-1000  ${
           menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        } ` }
       >
         <a
           href="#"
@@ -94,14 +92,13 @@ function Header(props) {
             ))}
           </ul>
         </nav>
-        
-          <a
-            href="#"
-            className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl mt-3"
-          >
-            Let's Talk
-          </a>
 
+        <a
+          href="#"
+          className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl mt-3"
+        >
+          Let's Talk
+        </a>
       </div>
     </header>
   );

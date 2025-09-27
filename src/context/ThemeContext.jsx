@@ -6,35 +6,28 @@ const initialState = {
   theme: "light",
 };
 
-const themeset=() => {
+const themeset = () => {
+  const theme = localStorage.getItem("theme");
 
-  const theme=localStorage.getItem("theme")
+  console.log("theme", theme);
 
-  console.log("theme" , theme);
-
-  if(theme) {
-
-    return {theme}
-
+  if (theme) {
+    return { theme };
   } else {
-    return {theme : "dark"}
+    return { theme: "dark" };
   }
-  
-
-}
-
+};
 
 export const ThemeContext = createContext();
 
-export const ThemeProvider = ({children}) => {
+export const ThemeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(themeReducer, themeset());
 
   useEffect(() => {
-    localStorage.setItem("theme" ,state.theme )
-    
+    localStorage.setItem("theme", state.theme);
   }, [state.theme]);
 
-const toogleTheme = (val) => {
+  const toogleTheme = (val) => {
     dispatch({ type: THEME_TYPE, payload: val === "light" ? "dark" : "light" });
   };
 
@@ -56,7 +49,7 @@ const toogleTheme = (val) => {
 // const initialState = () => {
 //   const saveTheme = localStorage.getItem("theme");
 //   console.log("saveTheme" , saveTheme);
-  
+
 //   return saveTheme
 
 // };
@@ -75,7 +68,6 @@ const toogleTheme = (val) => {
 //     dispatch({ type: THEME_TYPE, payload: val === "light" ? "dark" : "light" });
 //   };
 
-
 //   return (
 //     <ThemeContext.Provider value={{ ...state, toogleTheme }}>
 //       {children}
@@ -83,8 +75,8 @@ const toogleTheme = (val) => {
 //   );
 // };
 
-  // useEffect(() => {
-  //   const saveTheme = localStorage.getItem("theme");
-  //     console.log("saveTheme",  saveTheme);
-    
-  // }, []);
+// useEffect(() => {
+//   const saveTheme = localStorage.getItem("theme");
+//     console.log("saveTheme",  saveTheme);
+
+// }, []);
