@@ -7,7 +7,7 @@ function Project(props) {
     <div className="container mx-auto">
       {/* h-screen */}
       <div class="grid grid-cols-5 gap-5 mt-7  ">
-        <div class="col-span-2 p-4 bg-regal-purpul flex justify-between rounded-3xl">
+        {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl">
           <img src="/public/img/starr.webp" alt="" className="w-74" />
 
           <div className="flex flex-col justify-between">
@@ -21,7 +21,35 @@ function Project(props) {
 
             <a
               href="#"
-              className=" inline-block bg-transparent border-2   dark:text-white px-2 py-2 rounded-2xl mt-4 w-fit "
+              className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
+            >
+              Studio
+              <GoArrowUpRight className="inline ml-2" />
+            </a>
+          </div>
+        </div> */}
+
+        {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl relative"> */}
+        <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl">
+          {/* <img src="/public/img/starr.webp" alt="" className="w-74 absolute bottom-1 left-[-22px]" />  */}
+          <div className="relative">
+            <div className="">
+              <img src="/public/img/starr.webp" alt="" className="w-74" />
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <p className="text-7xl font-bold">50+</p>
+              <p>
+                Happy clients who <br />
+                trust my work
+              </p>
+            </div>
+
+            <a
+              href="#"
+              className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
             >
               Studio
               <GoArrowUpRight className="inline ml-2" />
@@ -29,16 +57,16 @@ function Project(props) {
           </div>
         </div>
 
-        {/* ==try  */}
+       
 
-        <div class="col-span-3 p-4 bg-white flex justify-between rounded-3xl">
+        <div class="col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative">
           <img
             src="/public/img/phone_card-image-02.webp"
             alt=""
-            className="w-74"
+            className="w-74 rounded-3xl"
           />
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between p-4">
             {/* <a
               href="#"
               className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
@@ -47,89 +75,51 @@ function Project(props) {
               <GoArrowUpRight className="inline ml-2" />
             </a> */}
 
-            <div className="flex -space-x-4 rtl:space-x-reverse">
+            <div className="flex -space-x-4  relative">
               <img
-                class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 absolute top-0 left-0"
                 src="/public/img/women_project_img.webp"
                 alt=""
               />
               <img
-                class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-pink-800 absolute top-0.5 left-4.5"
                 src="/public/img/men.webp"
                 alt=""
               />
               <img
-                class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 absolute top-0.5 left-8.5"
                 src="/public/img/women_project_img.webp"
                 alt=""
               />
             </div>
 
             <div>
-              <p className="text-7xl font-bold  dark:text-black">50+</p>
-              <p className=" dark:text-black">
+              <p className="text-7xl font-bold ">50+</p>
+              <p>
                 Clients come back for <br />a new projects
               </p>
             </div>
           </div>
-
-          {/* <h1 className=" bg-black dark:bg-white text-white  dark:text-black">
-            hello
-          </h1> */}
-
-          {/* <div className="relative ">
-            <p className="text-7xl bg-black dark:bg-white text-white  dark:text-black font-bold absolute bottom-0 right-0 pt-4">
-              80%
-            </p>
-            <p className="bg-black dark:bg-white text-white  dark:text-black absolute right-0 bottom-0 ">
-              Clients come back for a new projects
-            </p>
-          </div> */}
         </div>
 
-        {/* ===try  */}
+        {/* #FAF7F6 */}
 
-        {/* ==  */}
-
-        {/* <div class="col-span-3 p-4 bg-white flex justify-between rounded-3xl">
-          <img
-            src="/public/img/phone_card-image-02.webp"
-            alt=""
-            className="w-74"
-          />
-
-          <h1 className=" bg-black dark:bg-white text-white  dark:text-black">
-            hello
-          </h1>
-
-          <div className="relative ">
-            <p className="text-7xl bg-black dark:bg-white text-white  dark:text-black font-bold absolute bottom-0 right-0 pt-4">
-              80%
-            </p>
-            <p className="bg-black dark:bg-white text-white  dark:text-black absolute right-0 bottom-0 ">
-              Clients come back for a new projects
-            </p>
-          </div>
-        </div> */}
-
-        {/* ==  */}
-
-        <div class="col-span-3 p-4 bg-white flex justify-between rounded-3xl">
-          <div className="relative ">
-            <p className="text-7xl bg-black dark:bg-white text-white  dark:text-black font-bold">
-              5+
-            </p>
-            <p className="bg-black dark:bg-white text-white  dark:text-black">
-              Years of professional <br />
-              experience in designing <br /> digital products
-            </p>
+        <div class="col-span-3 p-4 bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl">
+          <div className="flex flex-col justify-between ">
+            <div>
+              <p className="text-7xl font-bold">5+</p>
+              <p className="">
+                Years of professional <br />
+                experience in designing <br /> digital products
+              </p>
+            </div>
 
             <a
               href="#"
-              className="bg-white dark:bg-black text-black  dark:text-white px-5 py-2 rounded-2xl inline-block mt-4 absolute bottom-0 right-0 border-1"
+              className="bg-transparent  px-5 py-2 rounded-2xl inline-block mt-4  border-2 w-fit"
             >
               Start New Project
-              <FiArrowDownRight />
+              <FiArrowDownRight className="inline ml-3" />
             </a>
           </div>
 
@@ -141,23 +131,22 @@ function Project(props) {
         </div>
 
         {/* <div class="col-span-2 p-4 bg-yellow-200 ">04</div> */}
-        <div class="col-span-2 p-4 bg-white flex justify-between rounded-3xl">
-          <div className="relative ">
-            <p className="text-7xl bg-black dark:bg-white text-white  dark:text-black font-bold">
-              70+
-            </p>
-            <p className="bg-black dark:bg-white text-white  dark:text-black">
-              Successfully <br />
-              completed projects
-            </p>
+        <div class="col-span-2 p-4  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl">
+          <div className="flex flex-col justify-between ">
+            <div>
+              <p className="text-7xl font-bold">70+</p>
+              <p>
+                Successfully <br />
+                completed project
+              </p>
+            </div>
 
             <a
               href="#"
-              //   className="bg-black dark:bg-white text-white  dark:text-black px-5 py-2 rounded-2xl inline-block mt-4 absolute bottom-0 right-0"
-              className="bg-white dark:bg-black text-black  dark:text-white px-5 py-2 rounded-2xl inline-block mt-4 absolute bottom-0 left-0 border-1"
+              className="bg-transparent  px-5 py-2 rounded-2xl inline-block mt-4  border-2 w-fit"
             >
               Works
-              {/* <GoArrowUpRight /> */}
+              <GoArrowUpRight className="inline ml-3" />
             </a>
           </div>
 

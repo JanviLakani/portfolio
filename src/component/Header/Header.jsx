@@ -44,8 +44,8 @@ function Header(props) {
           </nav>
         </div>
 
-        {/* <div className="flex justify-between items-center space-x-6 xl:space-x-7"> */}
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex justify-between items-center space-x-6 xl:space-x-7">
+        {/* <div className="flex justify-between items-center gap-3"> */}
           {/* <h1  className="text-white">janvi</h1> */}
 
           <a href="#" onClick={() => theme.toogleTheme(theme.theme)}>
