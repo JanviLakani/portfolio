@@ -29,6 +29,31 @@
 
 }
 
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotateImg {
+ 
+  /* animation: rotateImage 2s linear infinite ease-in normal ;  */
+  animation: rotateImage 3s linear infinite normal;
+  /* animation-direction: reverse; */
+}
+
+
+
+
+
+
+
+
 /* body {
   @apply bg-gray-900 text-white min-h-screen flex items-center justify-center;
 } */

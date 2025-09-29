@@ -28,9 +28,9 @@ function Header(props) {
     <header className="py-6">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex justify-between space-x-20 xl:space-x-30">
-          <a href="" className="text-2xl">
+          <a href="#">
             {/* <img src={logo} alt="logo-img" /> */}
-            <img src={theme.theme === "light" ? darkLogo : logo} alt="logo" />
+            <img src={theme.theme === "light" ? darkLogo : logo} alt="logo" className="w-44" />
           </a>
 
           <nav>

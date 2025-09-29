@@ -1,41 +1,20 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiArrowDownRight } from "react-icons/fi";
+import star from "../../assets/img/starr.webp";
+import rotateImage from "../../assets/img/rotate.webp";
+import { IoMdAperture } from "react-icons/io";
 
 function Project(props) {
   return (
     <div className="container mx-auto">
       {/* h-screen */}
       <div class="grid grid-cols-5 gap-5 mt-7  ">
-        {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl">
-          <img src="/public/img/starr.webp" alt="" className="w-74" />
-
-          <div className="flex flex-col justify-between">
-            <div>
-              <p className="text-7xl font-bold">50+</p>
-              <p>
-                Happy clients who <br />
-                trust my work
-              </p>
-            </div>
-
-            <a
-              href="#"
-              className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
-            >
-              Studio
-              <GoArrowUpRight className="inline ml-2" />
-            </a>
-          </div>
-        </div> */}
-
         {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl relative"> */}
-        <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl">
+        <div class="relative overflow-hidden col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-end rounded-3xl">
           {/* <img src="/public/img/starr.webp" alt="" className="w-74 absolute bottom-1 left-[-22px]" />  */}
-          <div className="relative">
-            <div className="">
-              <img src="/public/img/starr.webp" alt="" className="w-74" />
-            </div>
+          <div className=" w-[300px] h-74 absolute top-0 -left-5">
+            <img src={star} alt="" className="w-full h-full" />
           </div>
 
           <div className="flex flex-col justify-between">
@@ -56,8 +35,6 @@ function Project(props) {
             </a>
           </div>
         </div>
-
-       
 
         <div class="col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative">
           <img
@@ -157,6 +134,17 @@ function Project(props) {
           />
         </div>
       </div>
+      <br />
+      <br />
+
+      <div className="relative w-25 h-25">
+        <img
+          src={rotateImage}
+          className="mx-auto absolute top-0 left-0 rotateImg"
+          
+        />
+        <IoMdAperture className="absolute top-1/2 left-1/2 transform -translate-1/2" />
+      </div>
     </div>
   );
 }
@@ -164,3 +152,27 @@ function Project(props) {
 export default Project;
 
 // https://mixdesign.dev/themeforest/rayo/index-main.html
+
+{
+  /* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl">
+          <img src="/public/img/starr.webp" alt="" className="w-74" />
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <p className="text-7xl font-bold">50+</p>
+              <p>
+                Happy clients who <br />
+                trust my work
+              </p>
+            </div>
+
+            <a
+              href="#"
+              className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
+            >
+              Studio
+              <GoArrowUpRight className="inline ml-2" />
+            </a>
+          </div>
+        </div> */
+}
