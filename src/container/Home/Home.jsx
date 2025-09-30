@@ -19,8 +19,6 @@
 
 // export default Home;
 
-
-
 import React from "react";
 import Project from "../../component/Project/Project";
 
@@ -38,9 +36,8 @@ function Home(props) {
             </p> */}
 
             <p className="text-[40px] md:text-[50px] lg:text-[55px] leading-snug text-black dark:text-white">
-              narratives that <br /> inspire  and engage.
+              narratives that <br /> inspire and engage.
             </p>
-            
           </div>
           <div className="col-span-12 lg:col-span-4">
             <video
@@ -56,17 +53,45 @@ function Home(props) {
             </video>
           </div>
         </div>
-        <div className="flex mt-10 bg-gray-700 text-white rounded-full  justify-between px-8 py-3">
-          <span>Portfolio</span>
-          <span>Development</span>
-          <span>Branding</span>
-          <span>Design</span>
-          <span>Development</span>
-        </div>
-
       </div>
 
-      <Project/>
+      {/*       
+        <div className="flex mt-10 bg-gray-700 text-white rounded-full  justify-between px-8 py-3 ">
+          <span className="animate-marquee ">Portfolio</span>
+          <span className="animate-marquee">Development</span>
+          <span className="animate-marquee ">Branding</span>
+          <span className="animate-marquee ">Design</span>
+          <span className="animate-marquee ">Development</span>
+        </div> */}
+
+      <div className="overflow-hidden whitespace-nowrap bg-gray-700 text-white rounded-full mt-10">
+        <div className="animation-Line inline-block py-3 px-4">
+          <span className="px-[50px]">Agency</span>
+          <span className="px-[50px]">Portfolio</span>
+          <span className="px-[50px]">Development</span>
+          <span className="px-[50px]">Branding</span>
+          <span className="px-[50px]">Design</span>
+          <span className="px-[50px]">Branding</span>
+          {/* <span className="mx-6">Agency</span>
+          <span className="mx-6">Portfolio</span> */}
+          {/* <span className="mx-6">Design</span> */}
+          {/* <span className="mx-6">Branding</span> */}
+        </div>
+        <div className="animation-Line animation-Line2 inline-block">
+          <span className="px-[50px]">Agency</span>
+          <span className="px-[50px]">Portfolio</span>
+          <span className="px-[50px]">Development</span>
+          <span className="px-[50px]">Branding</span>
+          <span className="px-[50px]">Design</span>
+          <span className="px-[50px]">Branding</span>
+          {/* <span className="mx-6">Agency</span>
+          <span className="mx-6">Portfolio</span> */}
+          {/* <span className="mx-6">Design</span> */}
+          {/* <span className="mx-6">Branding</span> */}
+        </div>
+      </div>
+
+      <Project />
 
       {/* <div className="flex mt-10 bg-gray-700 text-white rounded-full  justify-between px-8 py-3">
         <span>Portfolio</span>

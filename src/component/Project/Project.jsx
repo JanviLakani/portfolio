@@ -11,10 +11,10 @@ function Project(props) {
       {/* h-screen */}
       <div class="grid grid-cols-5 gap-5 mt-7  ">
         {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl relative"> */}
-        <div class="relative overflow-hidden col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-end rounded-3xl">
+        <div class="relative overflow-hidden col-span-5 lg:col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-end rounded-3xl  h-[250] xl:h-[360px]">
           {/* <img src="/public/img/starr.webp" alt="" className="w-74 absolute bottom-1 left-[-22px]" />  */}
           <div className=" w-[300px] h-74 absolute top-0 -left-5">
-            <img src={star} alt="" className="w-full h-full" />
+            <img src={star} alt="" className="w-[260px] lg:w-[200px] xl:w-full h-[260px] lg:h-[200px] xl:h-full" />
           </div>
 
           <div className="flex flex-col justify-between">
@@ -36,7 +36,7 @@ function Project(props) {
           </div>
         </div>
 
-        <div class="col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative">
+        <div class="col-span-5 lg:col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative   h-[250] xl:h-[360px]">
           <img
             src="/public/img/phone_card-image-02.webp"
             alt=""
@@ -81,7 +81,7 @@ function Project(props) {
 
         {/* #FAF7F6 */}
 
-        <div class="col-span-3 p-4 bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl">
+        <div class=" col-span-5 lg:col-span-3 p-4 bg-regal-offwhite dark:bg-regal-offBlack flex  rounded-3xl relative overflow-hidden h-[300] xl:h-[360px]">
           <div className="flex flex-col justify-between ">
             <div>
               <p className="text-7xl font-bold">5+</p>
@@ -103,12 +103,12 @@ function Project(props) {
           <img
             src="/public/img/robort_card-image-03.webp"
             alt=""
-            className="w-74"
+            className="w-[350px] h-74 absolute top-0 -right-8"
           />
         </div>
 
         {/* <div class="col-span-2 p-4 bg-yellow-200 ">04</div> */}
-        <div class="col-span-2 p-4  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl">
+        <div class="col-span-5 lg:col-span-2 p-4  bg-regal-offwhite dark:bg-regal-offBlack flex relative  rounded-3xl h-[300px] xl:h-[360px]  overflow-hidden">
           <div className="flex flex-col justify-between ">
             <div>
               <p className="text-7xl font-bold">70+</p>
@@ -130,21 +130,40 @@ function Project(props) {
           <img
             src="/public/img/camera_card-image-04.webp"
             alt=""
-            className="w-74"
+            className="w-[220px] xl:w-[360px] h-50 xl:h-80 absolute top-0 -right-10"
           />
         </div>
       </div>
+
       <br />
       <br />
 
-      <div className="relative w-25 h-25">
+      {/* rotate circle  */}
+
+      {/* <div className="relative w-25 h-25">
         <img
           src={rotateImage}
           className="mx-auto absolute top-0 left-0 rotateImg"
-          
         />
         <IoMdAperture className="absolute top-1/2 left-1/2 transform -translate-1/2" />
       </div>
+
+      // suare line continue 
+
+      <p class="marquee">
+        <span>
+          This is text - This is text - This is text - This is text - This is
+          text - This is text - This is text - This is text - This is text -
+          This is text - This is text - This is text ;
+        </span>
+      </p>
+      <p class="marquee marquee2">
+        <span>
+          This is text - This is text - This is text - This is text - This is
+          text - This is text - This is text - This is text - This is text -
+          This is text - This is text - This is text ;
+        </span>
+      </p> */}
     </div>
   );
 }

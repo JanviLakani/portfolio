@@ -1,34 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@import "tailwindcss";  
-
+@import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme{
+@theme {
   /* --primary-color: #77ff33;  only check karva mukel hto */
   /* --primary-color: #000000;
   --dark-primary-color: #ffffff; */
-   --primary-color: #ffffff;
+  --primary-color: #ffffff;
   --dark-primary-color: #000000;
-   /* --dark-primary-color: #ff6600;  */
-  --font-poppins :"Poppins", serif;
-  --font-lato :"Lato", sans-serif;
-  --color-regal-purpul: #9F8BE7; 
-  --color-regal-offwhite :#bfbfbf;
-  --color-regal-offBlack :#1C1C1C;
-  --color-regal-yellow : #DDF160
-
-  
-  
-  
-
+  /* --dark-primary-color: #ff6600;  */
+  --font-poppins: "Poppins", serif;
+  --font-lato: "Lato", sans-serif;
+  --color-regal-purpul: #9f8be7;
+  --color-regal-offwhite: #bfbfbf;
+  --color-regal-offBlack: #1c1c1c;
+  --color-regal-yellow: #ddf160;
 }
-
 
 @keyframes rotateImage {
   0% {
@@ -41,23 +32,60 @@
 }
 
 .rotateImg {
- 
   /* animation: rotateImage 2s linear infinite ease-in normal ;  */
-  animation: rotateImage 3s linear infinite normal;
+  animation: rotateImage 6s linear infinite normal;
   /* animation-direction: reverse; */
 }
 
+/* --- */
+@keyframes squareLine {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
+.animation-Line {
+  animation: squareLine 25s linear infinite normal;
+}
 
+/* .animation-Line span {
+  padding: 0px 50px;
+} */
 
-
-
+/* .animation-Line2 span {
+  animation-delay: 1s;
+} */
 
 
 /* body {
   @apply bg-gray-900 text-white min-h-screen flex items-center justify-center;
 } */
 
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
 
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 11s linear infinite;
+}
 
+.marquee2 span {
+  animation-delay: 2.5s;
+}
 
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
