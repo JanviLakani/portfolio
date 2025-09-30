@@ -8,16 +8,19 @@ import { IoMdAperture } from "react-icons/io";
 function Project(props) {
   return (
     <div className="container mx-auto">
-      {/* h-screen */}
-      <div class="grid grid-cols-5 gap-5 mt-7  ">
-        {/* <div class="col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-between rounded-3xl relative"> */}
-        <div class="relative overflow-hidden col-span-5 lg:col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex justify-end rounded-3xl  h-[250] xl:h-[360px]">
-          {/* <img src="/public/img/starr.webp" alt="" className="w-74 absolute bottom-1 left-[-22px]" />  */}
-          <div className=" w-[300px] h-74 absolute top-0 -left-5">
-            <img src={star} alt="" className="w-[260px] lg:w-[200px] xl:w-full h-[260px] lg:h-[200px] xl:h-full" />
+      <div class="grid grid-cols-5 gap-5 mt-7 ">
+        <div class="overflow-hidden col-span-5 lg:col-span-2 p-4 bg-regal-purpul dark:bg-regal-yellow text-white dark:text-black  flex flex-col md:flex-row justify-between rounded-3xl  h-[250] xl:h-[360px]">
+          <div className="relative w-[300px] h-74">
+            <div className="  absolute -top-5 -left-10">
+              <img
+                src={star}
+                alt=""
+                className="w-[260px] lg:w-[200px] xl:w-full h-[260px] lg:h-[200px] xl:h-full"
+              />
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between -order-1 md:order-1">
             <div>
               <p className="text-7xl font-bold">50+</p>
               <p>
@@ -36,6 +39,9 @@ function Project(props) {
           </div>
         </div>
 
+
+        {/* === phone ===  */}
+
         <div class="col-span-5 lg:col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative   h-[250] xl:h-[360px]">
           <img
             src="/public/img/phone_card-image-02.webp"
@@ -44,14 +50,6 @@ function Project(props) {
           />
 
           <div className="flex flex-col justify-between p-4">
-            {/* <a
-              href="#"
-              className=" inline-block bg-transparent border-2   dark:text-black px-2 py-2 rounded-2xl mt-4 w-fit "
-            >
-              Studio
-              <GoArrowUpRight className="inline ml-2" />
-            </a> */}
-
             <div className="flex -space-x-4  relative">
               <img
                 className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 absolute top-0 left-0"
@@ -79,8 +77,6 @@ function Project(props) {
           </div>
         </div>
 
-        {/* #FAF7F6 */}
-
         <div class=" col-span-5 lg:col-span-3 p-4 bg-regal-offwhite dark:bg-regal-offBlack flex  rounded-3xl relative overflow-hidden h-[300] xl:h-[360px]">
           <div className="flex flex-col justify-between ">
             <div>
@@ -107,7 +103,6 @@ function Project(props) {
           />
         </div>
 
-        {/* <div class="col-span-2 p-4 bg-yellow-200 ">04</div> */}
         <div class="col-span-5 lg:col-span-2 p-4  bg-regal-offwhite dark:bg-regal-offBlack flex relative  rounded-3xl h-[300px] xl:h-[360px]  overflow-hidden">
           <div className="flex flex-col justify-between ">
             <div>

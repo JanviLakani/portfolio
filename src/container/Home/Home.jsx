@@ -23,6 +23,7 @@ import React from "react";
 import Project from "../../component/Project/Project";
 
 function Home(props) {
+  const tec = ["Agency", "Portfolio", "branding", "design", "Development"];
   return (
     <>
       <div className="container mx-auto justify-between items-center">
@@ -65,31 +66,50 @@ function Home(props) {
         </div> */}
 
       <div className="overflow-hidden whitespace-nowrap bg-gray-700 text-white rounded-full mt-10">
-        <div className="animation-Line inline-block py-3 px-4">
-          <span className="px-[50px]">Agency</span>
-          <span className="px-[50px]">Portfolio</span>
-          <span className="px-[50px]">Development</span>
-          <span className="px-[50px]">Branding</span>
-          <span className="px-[50px]">Design</span>
-          <span className="px-[50px]">Branding</span>
-          {/* <span className="mx-6">Agency</span>
-          <span className="mx-6">Portfolio</span> */}
-          {/* <span className="mx-6">Design</span> */}
-          {/* <span className="mx-6">Branding</span> */}
+        <div className="animation-Line inline-block py-3 px-8">
+          <span className="px-[150px]">Agency</span>
+          <span className="px-[150px]">Portfolio</span>
+          <span className="px-[150px]">Development</span>
+          <span className="px-[150px]">Branding</span>
+          <span className="px-[150px]">Design</span>
+          <span className="px-[150px]">Branding</span>
         </div>
-        <div className="animation-Line animation-Line2 inline-block">
-          <span className="px-[50px]">Agency</span>
-          <span className="px-[50px]">Portfolio</span>
-          <span className="px-[50px]">Development</span>
-          <span className="px-[50px]">Branding</span>
-          <span className="px-[50px]">Design</span>
-          <span className="px-[50px]">Branding</span>
-          {/* <span className="mx-6">Agency</span>
-          <span className="mx-6">Portfolio</span> */}
-          {/* <span className="mx-6">Design</span> */}
-          {/* <span className="mx-6">Branding</span> */}
+        <div className="animation-Line animation-Line2 inline-block py-3 px-8">
+          <span className="px-[150px]">Agency</span>
+          <span className="px-[150px]">Portfolio</span>
+          <span className="px-[150px]">Development</span>
+          <span className="px-[150px]">Branding</span>
+          <span className="px-[150px]">Design</span>
+          <span className="px-[150px]">Branding</span>
         </div>
       </div>
+
+      <div className="w-[97%] mx-auto px-[150px] bg-green-700 text-white rounded-full mt-3 py-3  flex">
+        <ul className="flex scroll-Hor">
+          {tec.map((v, i) => (
+            <li className="px-[150px]">{v}</li>
+          ))}
+        </ul>
+
+        <ul className="flex scroll-Hor">
+          {tec.map((v, i) => (
+            <li className="px-[150px]">{v}</li>
+          ))}
+        </ul>
+      </div>
+
+      <br />
+      <br />
+
+      <a
+        href="#"
+        className="inline-block bg-black text-white  px-5 py-3 rounded-2xl mt-7 group "
+      >
+        <span className="inline-block relative overflow-hidden">
+          <span className="block  group-hover:-translate-y-full transition-transform duration-300">About me</span>
+          <span className="block absolute top-0 left-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">About me</span>
+        </span>
+      </a>
 
       <Project />
 

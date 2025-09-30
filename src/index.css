@@ -21,6 +21,9 @@
   --color-regal-yellow: #ddf160;
 }
 
+
+/* rotateImage 1*/
+
 @keyframes rotateImage {
   0% {
     transform: rotate(0deg);
@@ -37,7 +40,8 @@
   /* animation-direction: reverse; */
 }
 
-/* --- */
+/* ---  line continue 2*/
+
 @keyframes squareLine {
   0% {
     transform: translateX(0%);
@@ -51,6 +55,31 @@
   animation: squareLine 25s linear infinite normal;
 }
 
+/* ==== scrollHorizontal ===  */
+
+@keyframes scrollHorizontal {
+    0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-Hor {
+  animation: scrollHorizontal 15s linear infinite normal;
+}
+
+  
+
+
+.scroll-btn {
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+/* ===  */
+
+
 /* .animation-Line span {
   padding: 0px 50px;
 } */
@@ -63,6 +92,8 @@
 /* body {
   @apply bg-gray-900 text-white min-h-screen flex items-center justify-center;
 } */
+
+/* === text  3*/
 
 .marquee {
   margin: 0 auto;
