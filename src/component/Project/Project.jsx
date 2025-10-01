@@ -39,72 +39,98 @@ function Project(props) {
           </div>
         </div>
 
-
         {/* === phone ===  */}
 
-        <div class="col-span-5 lg:col-span-3  bg-regal-offwhite dark:bg-regal-offBlack flex justify-between rounded-3xl relative   h-[250] xl:h-[360px]">
-          <img
-            src="/public/img/phone_card-image-02.webp"
-            alt=""
-            className="w-74 rounded-3xl"
-          />
+        <div
+          className="col-span-5 lg:col-span-3 p-4
+             bg-regal-offwhite dark:bg-regal-offBlack 
+             flex flex-col md:flex-row justify-between 
+             rounded-3xl relative overflow-hidden 
+             h-[250] xl:h-[360px]"
+        >
+          <div className="relative w-[300px] h-74">
+            <div className="absolute -top-5 -left-10"></div>
+            <img
+              src="/public/img/phone_card-image-02.webp"
+              alt="phone"
+              className="w-[260px] lg:w-[200px] xl:w-full h-[260px] lg:h-[200px] xl:h-full"
+            />
+          </div>
 
-          <div className="flex flex-col justify-between p-4">
-            <div className="flex -space-x-4  relative">
+          <div className="flex flex-col justify-between p-4 -order-1 md:order-1">
+            <div className="flex -space-x-4 relative mb-4">
               <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 absolute top-0 left-0"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
                 src="/public/img/women_project_img.webp"
                 alt=""
               />
               <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-pink-800 absolute top-0.5 left-4.5"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-pink-800"
                 src="/public/img/men.webp"
                 alt=""
               />
               <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 absolute top-0.5 left-8.5"
+                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
                 src="/public/img/women_project_img.webp"
                 alt=""
               />
             </div>
 
             <div>
-              <p className="text-7xl font-bold ">50+</p>
+              <p className="text-7xl font-bold">80%</p>
               <p>
-                Clients come back for <br />a new projects
+                Clients come back for <br /> a new projects
               </p>
             </div>
           </div>
         </div>
 
-        <div class=" col-span-5 lg:col-span-3 p-4 bg-regal-offwhite dark:bg-regal-offBlack flex  rounded-3xl relative overflow-hidden h-[300] xl:h-[360px]">
-          <div className="flex flex-col justify-between ">
+        {/* robort valu card not manage order  */}
+
+        <div
+          className="col-span-5 lg:col-span-3 p-4 
+             bg-regal-offwhite dark:bg-regal-offBlack 
+             flex flex-col md:flex-row relative 
+             rounded-3xl h-auto md:h-[360px] overflow-hidden justify-between"
+        >
+          <div className="flex flex-col justify-between -order-1">
             <div>
               <p className="text-7xl font-bold">5+</p>
-              <p className="">
+              <p>
                 Years of professional <br />
-                experience in designing <br /> digital products
+                experience in designing <br />
+                digital products
               </p>
             </div>
 
             <a
               href="#"
-              className="bg-transparent  px-5 py-2 rounded-2xl inline-block mt-4  border-2 w-fit"
+              className="bg-transparent px-5 py-2 rounded-2xl 
+                 inline-block mt-4 border-2 w-fit"
             >
               Start New Project
               <FiArrowDownRight className="inline ml-3" />
             </a>
           </div>
 
-          <img
-            src="/public/img/robort_card-image-03.webp"
-            alt=""
-            className="w-[350px] h-74 absolute top-0 -right-8"
-          />
+          <div className="relative w-[300px] h-74">
+            <div className="absolute -top-5 -left-9 md:-right-10">
+              <img
+                src="/public/img/robort_card-image-03.webp"
+                alt="robot"
+                className="w-[280px] md:w-[320px] xl:w-[350px] h-auto"
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="col-span-5 lg:col-span-2 p-4  bg-regal-offwhite dark:bg-regal-offBlack flex relative  rounded-3xl h-[300px] xl:h-[360px]  overflow-hidden">
-          <div className="flex flex-col justify-between ">
+        <div
+          className="col-span-5 lg:col-span-2 p-4  
+                bg-regal-offwhite dark:bg-regal-offBlack 
+                flex flex-col md:flex-row relative 
+                rounded-3xl h-auto md:h-[360px] overflow-hidden justify-between"
+        >
+          <div className="flex flex-col justify-between -order-1 ">
             <div>
               <p className="text-7xl font-bold">70+</p>
               <p>
@@ -115,18 +141,23 @@ function Project(props) {
 
             <a
               href="#"
-              className="bg-transparent  px-5 py-2 rounded-2xl inline-block mt-4  border-2 w-fit"
+              className="bg-transparent px-5 py-2 rounded-2xl 
+                 inline-block mt-4 border-2 w-fit"
             >
               Works
               <GoArrowUpRight className="inline ml-3" />
             </a>
           </div>
 
-          <img
-            src="/public/img/camera_card-image-04.webp"
-            alt=""
-            className="w-[220px] xl:w-[360px] h-50 xl:h-80 absolute top-0 -right-10"
-          />
+          <div className="  relative w-[300px] h-74">
+            <div className="absolute -top-5 -left-9 md:-right-17">
+              <img
+                src="/public/img/camera_card-image-04.webp"
+                alt="camera"
+                className="w-[220px] md:w-[280px] xl:w-[360px] h-auto"
+              />
+            </div>
+          </div>
         </div>
       </div>
 

@@ -21,12 +21,14 @@
 
 import React from "react";
 import Project from "../../component/Project/Project";
+// import Portfolio from "../../component/Portfolio/Portfolio";
+import Grid from "../../component/Grid/Grid";
 
 function Home(props) {
   const tec = ["Agency", "Portfolio", "branding", "design", "Development"];
   return (
     <>
-      <div className="container mx-auto justify-between items-center">
+      <div className="container mx-auto justify-between items-center relative">
         <div className="grid grid-cols-12 gap-4 mt-5">
           <div className="col-span-12 lg:col-span-7">
             <p className="text-[40px] md:text-[50px] lg:text-[55px] leading-tight text-[#B6BCC6]">
@@ -65,7 +67,7 @@ function Home(props) {
           <span className="animate-marquee ">Development</span>
         </div> */}
 
-      <div className="overflow-hidden whitespace-nowrap bg-gray-700 text-white rounded-full mt-10">
+      <div className="overflow-hidden whitespace-nowrap bg-gray-700 text-white rounded-full mt-10 ">
         <div className="animation-Line inline-block py-3 px-8">
           <span className="px-[150px]">Agency</span>
           <span className="px-[150px]">Portfolio</span>
@@ -106,12 +108,20 @@ function Home(props) {
         className="inline-block bg-black text-white  px-5 py-3 rounded-2xl mt-7 group "
       >
         <span className="inline-block relative overflow-hidden">
-          <span className="block  group-hover:-translate-y-full transition-transform duration-300">About me</span>
-          <span className="block absolute top-0 left-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">About me</span>
+          <span className="block  group-hover:-translate-y-full transition-transform duration-300">
+            About me
+          </span>
+          <span className="block absolute top-0 left-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            About meeee
+          </span>
         </span>
       </a>
 
+      
+
       <Project />
+      {/* <Portfolio/>  */}
+      <Grid />
 
       {/* <div className="flex mt-10 bg-gray-700 text-white rounded-full  justify-between px-8 py-3">
         <span>Portfolio</span>
