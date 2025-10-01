@@ -131,15 +131,16 @@ function Grid(props) {
         <div className="col-span-2 row-span-2  bg-blue-700 p-4">03</div>
       </div>
       <br />
-      {/* // TODO:confusion  */}
+      {/* confusion  */}
+
       <h1 className="text-green-900 font-bold my-5 ">
         Starting and ending lines
       </h1>
       <br />
       <div className="grid grid-flow-col grid-rows-3 gap-4 bg-gray-700 p-5 text-white font-bold text-center">
-        <div className="row-span-2 row-start-2 bg-red-300 p-3 h-40">01</div>
+        <div className="row-span-1 row-start-2 bg-red-300 p-3 h-40">01</div>
         <div className="row-span-2 row-end-3  bg-green-300 p-3 h-40">02</div>
-        <div className="row-start-1 row-end-2  bg-yellow-300 p-3 h-40">03</div>
+        <div className="row-start-1 row-end-4  bg-yellow-300 p-3 h-40">03</div>
       </div>
       <br />
 
@@ -186,30 +187,99 @@ function Grid(props) {
       <hr />
       <br />
       <h1 className="text-green-900 font-bold my-5 ">auto-cols-max</h1>
-      <div class="grid auto-cols-max grid-flow-col p-5 bg-teal-700 gap-4 text-center font-bold">
-        <div class="bg-teal-200 p-3">01</div>
-        <div class="bg-teal-200 p-3">02</div>
-        <div class="bg-teal-200 p-3">03</div>
-        <div class="bg-teal-200 p-3">04</div>
-        <div class="bg-teal-200 p-3">05</div>
-        <div class="bg-teal-200 p-3">06</div>
-        <div class="bg-teal-200 p-3">07</div>
-        <div class="bg-teal-200 p-3">08</div>
-        <div class="bg-teal-200 p-3">09</div>
-        <div class="bg-teal-200 p-3">10</div>
+      <div className="grid auto-cols-max grid-flow-col p-5 bg-teal-700 gap-4 text-center font-bold">
+        <div className="bg-teal-200 p-3">01</div>
+        <div className="bg-teal-200 p-3">02</div>
+        <div className="bg-teal-200 p-3">03</div>
+        <div className="bg-teal-200 p-3">04</div>
+        <div className="bg-teal-200 p-3">05</div>
+        <div className="bg-teal-200 p-3">06</div>
+        <div className="bg-teal-200 p-3">07</div>
+        <div className="bg-teal-200 p-3">08</div>
+        <div className="bg-teal-200 p-3">09</div>
+        <div className="bg-teal-200 p-3">10</div>
       </div>
       <br />
       <hr />
 
       <h1 className="text-green-900 font-bold my-5 ">auto-rows-max</h1>
-      <div class="grid auto-rows-max grid-flow-row p-5 bg-indigo-700 gap-4 text-center font-bold text-white">
-        <div class="bg-indigo-200 p-3">01</div>
-        <div class="bg-indigo-500 p-3">02</div>
-        <div class="bg-indigo-200 p-3">03</div>
-        <div class="bg-indigo-500 p-3">04</div>
-        <div class="bg-indigo-200 p-3">05</div>
-        <div class="bg-indigo-500 p-3">06</div>
+      <div className="grid auto-rows-max grid-flow-row p-5 bg-indigo-700 gap-4 text-center font-bold text-white">
+        <div className="bg-indigo-200 p-3">01</div>
+        <div className="bg-indigo-500 p-3">02</div>
+        <div className="bg-indigo-200 p-3">03</div>
+        <div className="bg-indigo-500 p-3">04</div>
+        <div className="bg-indigo-200 p-3">05</div>
+        <div className="bg-indigo-500 p-3">06</div>
       </div>
+
+      <br />
+      <br />
+
+      <h2 className="text-sky-500 font-bold my-5">class 01-10-2025</h2>
+
+      <h1 className="text-sky-900 font-bold my-5">
+        grid-template-columns <br />
+        Specifying the grid columns{" "}
+      </h1>
+
+      <div class="grid grid-cols-4 gap-4">
+        <div className="bg-indigo-200 p-3">01</div>
+        <div className="bg-indigo-200 p-3">02</div>
+        <div className="bg-indigo-200 p-3">03</div>
+        <div className="bg-indigo-200 p-3">04</div>
+        <div className="bg-indigo-200 p-3">05</div>
+
+        <div className="col-span-3 grid grid-cols-subgrid gap-4 bg-indigo-400 p-3">
+          <div className="bg-indigo-700 p-3 col-end-3">06</div>
+          <div className="bg-indigo-900 p-3 col-start-1">06</div>
+        </div>
+      </div>
+
+      <h1 classNameName="text-fuchsia-900 font-bold my-5">grid-column</h1>
+
+      <div className="grid grid-cols-6 gap-4 bg-fuchsia-500 p-5">
+        <div className="col-span-4 col-start-2 bg-fuchsia-900 p-3">01</div>
+        <div className="col-start-1 col-end-3 bg-fuchsia-900 p-3">02</div>
+        <div className="col-span-2 col-end-7 bg-fuchsia-900 p-3">03</div>
+        <div className="col-start-1 col-end-7 bg-fuchsia-900 p-3">04</div>
+      </div>
+
+       <h1 className="text-indigo-400  font-bold my-5">grid-template-rows</h1>
+
+      <div className="grid grid-flow-col grid-rows-4 gap-4 mt-5 bg-indigo-800 p-3">
+        <div className="bg-indigo-200 p-3">01</div>
+        <div className="bg-indigo-200 p-3">02</div>
+        <div className="bg-indigo-200 p-3">03</div>
+        <div className="bg-indigo-200 p-3">04</div>
+        <div className="bg-indigo-200 p-3">05</div>
+
+        <div className="row-span-3 grid grid-rows-subgrid bg-indigo-900 p-3 gap-4">
+          <div className="row-start-2 bg-indigo-400 p-3 ">06</div>
+        </div>
+        <div className="bg-indigo-200 p-3">07</div>
+        <div className="bg-indigo-200 p-3">08</div>
+        <div className="bg-indigo-200 p-3">09</div>
+        <div className="bg-indigo-200 p-3">10</div>
+      </div>
+
+
+      
+     <h1 className="text-indigo-400  font-bold my-5">Layout</h1>
+
+        <div className="grid grid-cols-3 gap-4 bg-blue-800 p-5  text-green-950 text-center">
+        <div className="bg-lime-300 p-4 h-20">01</div>
+        <div className="bg-lime-300 p-4 h-20">02</div>
+        <div className="bg-lime-300 p-4 h-20">03</div>
+        <div className="row-span-2 bg-lime-800 p-6 h-44 ">04</div>
+        <div className="bg-lime-500 p-4 col-span-2 h-20">05</div>
+        <div className="bg-lime-500 p-4 col-span-2 h-20">06</div>
+        <div className="bg-lime-100 p-4 col-span-2 h-20">07</div>
+        <div className="bg-lime-200 p-4 h-20">08</div>
+      </div>
+
+
+    {/* https://preview.themeforest.net/item/inbio-personal-portfolio-wordpress-theme/full_screen_preview/39221039 */}
+
     </div>
   );
 }

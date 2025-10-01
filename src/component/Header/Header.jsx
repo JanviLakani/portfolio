@@ -18,8 +18,8 @@ function Header(props) {
     { title: "Home", link: "#" },
     { title: "About", link: "#" },
     { title: "Project", link: "#" },
-    { title: "Tecnologi", link: "#" },
-    { title: "Contact", link: "#" },
+    { title: "Tecnologis", link: "#" },
+    { title: "Contact Me", link: "#" },
   ];
 
   // https://wp.aqlova.com/bfolio/home-dark/
