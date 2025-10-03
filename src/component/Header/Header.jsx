@@ -24,6 +24,11 @@ function Header(props) {
   ];
 
   // https://wp.aqlova.com/bfolio/home-dark/
+  // https://codepen.io/tag/background-animation?cursor=ZD0xJm89MCZwPTk=
+  // https://codepen.io/kanishkkunal/pen/MYbmzN/
+  // https://preview.themeforest.net/item/zeng-personal-portfolio-wordpress-theme/full_screen_preview/59734350
+  // https://slimhamdi.net/tunis/demos/dark.html
+  // http://preview.themeforest.net/item/biogra-personal-portfolio-wordpress-theme/full_screen_preview/59916925
 
   return (
     <header className="py-6 fixed top-0 left-0 w-full z-5555 bg-white dark:bg-black text-shadow-md">

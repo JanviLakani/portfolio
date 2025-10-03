@@ -3,8 +3,9 @@ import React from "react";
 
 function Homes() {
   return (
+  
     <section
-       className="h-screen relative flex items-center justify-center text-white bg-[url('/public/img/home-banner-1.jpg')] bg-cover bg-center z-555"
+       className="h-screen relative flex items-center justify-center text-white bg-[url('/public/img/vactor2.jpg')] bg-cover bg-center z-555"
       
     >
       <div className="text-center px-5">
