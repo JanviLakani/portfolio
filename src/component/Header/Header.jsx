@@ -2,8 +2,9 @@ import React, { useContext, useState } from "react";
 import logo from "../../assets/img/portpholio-white-logo.webp";
 import darkLogo from "../../assets/img/logo-dark.webp";
 import { ThemeContext } from "../../context/ThemeContext";
-import { MdSunny } from "react-icons/md";
-import { GoMoon } from "react-icons/go";
+import { TbSunHigh } from "react-icons/tb";
+
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RiMenu5Line } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 
@@ -16,28 +17,35 @@ function Header(props) {
 
   const navLinks = [
     { title: "Home", link: "#" },
-    { title: "About", link: "#" },
     { title: "Project", link: "#" },
-    { title: "Tecnologis", link: "#" },
+    { title: "About Me", link: "#" },
+    { title: "Resume", link: "#" },
     { title: "Contact Me", link: "#" },
   ];
 
   // https://wp.aqlova.com/bfolio/home-dark/
 
   return (
-    <header className="py-6">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="py-6 fixed top-0 left-0 w-full z-5555 bg-white dark:bg-black text-shadow-md">
+      <div className="container mx-auto flex justify-between items-center relative ">
         <div className="flex justify-between space-x-20 xl:space-x-30">
-          <a href="#">
-            {/* <img src={logo} alt="logo-img" /> */}
-            <img src={theme.theme === "light" ? darkLogo : logo} alt="logo" className="w-44" />
-          </a>
+          {/* <a href="#">
+            <img
+              src={theme.theme === "light" ? darkLogo : logo}
+              alt="logo"
+              className="w-44"
+            />
+          </a> */}
 
+      
           <nav>
             <ul className="hidden lg:flex justify-between space-x-7 xl:space-x-9 font-bold">
               {navLinks.map((v, i) => (
                 <li key={i}>
-                  <a href={v.link}>{v.title}</a>
+                  <a href={v.link} className="relative group inline-block">
+                    {v.title}
+                    <span className="absolute left-0 -bottom-1 w-0 h-[4px] bg-orange-600 transition-all duration-400 group-hover:w-full"></span>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -45,16 +53,16 @@ function Header(props) {
         </div>
 
         <div className="flex justify-between items-center space-x-6 xl:space-x-7">
-        {/* <div className="flex justify-between items-center gap-3"> */}
+          {/* <div className="flex justify-between items-center gap-3"> */}
           {/* <h1  className="text-white">janvi</h1> */}
 
-          <a href="#" onClick={() => theme.toogleTheme(theme.theme)}>
-            {theme.theme === "light" ? <GoMoon /> : <MdSunny />}
+          <a href="#" onClick={() => theme.toogleTheme(theme.theme)} className="text-4xl">
+            {theme.theme === "light" ? <BsFillMoonStarsFill /> : <TbSunHigh />}
           </a>
 
           <a
             href="#"
-            className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl hidden lg:inline-block"
+            className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl hidden lg:inline-block hover:bg-orange-400 "
           >
             Let's Talk
           </a>
@@ -73,7 +81,7 @@ function Header(props) {
       <div
         className={`lg:hidden w-80 h-screen fixed top-0 right-0 bg-black transform transition-transform duration-1000  ${
           menuOpen ? "translate-x-0" : "translate-x-full"
-        } ` }
+        } `}
       >
         <a
           href="#"
@@ -95,7 +103,7 @@ function Header(props) {
 
         <a
           href="#"
-          className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl mt-3"
+          className="bg-black dark:bg-white text-white  dark:text-black px-4 py-2 rounded-2xl mt-3 hover:bg-yellow-500 "
         >
           Let's Talk
         </a>

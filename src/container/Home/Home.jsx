@@ -9,6 +9,8 @@ import RotateImgAnimation from "../../component/RotateImgAnimation/RotateImgAnim
 import HorizontalScrollAnimationMap from "../../component/HorizontalScrollAnimationMap/HorizontalScrollAnimationMap";
 import HomePage from "../../component/HomePage/HomePage";
 import Homes from "../../component/Homes/Homes";
+import Portfolio from "../../component/Portfolio/Portfolio";
+import Projects from "../../component/Projects/Projects";
 
 
 function Home(props) {
@@ -23,6 +25,7 @@ function Home(props) {
       {/* <RotateImgAnimation/> */}
       {/* <HorizontalScrollAnimationMap/>  */}
        <Homes/>
+       <Projects/>
     </>
   );
 }

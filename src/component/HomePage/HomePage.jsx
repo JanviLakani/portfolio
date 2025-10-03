@@ -58,3 +58,9 @@ export default HomePage;
 // }
 
 // export default Home;
+
+
+// portfolio link 
+
+// https://braxton-reactjs-bright-portfolio.netlify.app/home-image 
+// https://preview.themeforest.net/item/blayden-personal-portfolio-resume-nextjs-template/full_screen_preview/59673134
