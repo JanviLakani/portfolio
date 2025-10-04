@@ -73,7 +73,8 @@ function Homes() {
             with every project.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center align-items-center
+">
             <div className="bg-regal-gray p-6 rounded-xl shadow-md text-center ">
               <h2 className="text-2xl lg:text-3xl font-bold">10+</h2>
               <p className="text-gray-400 text-xs lg:text-sm">Years in AI Development</p>
