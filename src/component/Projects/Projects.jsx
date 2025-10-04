@@ -21,12 +21,13 @@ import React from "react";
 
 function Projects(props) {
   return (
-    <div className="container mx-auto mt-12 px-5">
+    <section className="bg-black text-white min-h-screen flex items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center z-555">
+       <div className="container mx-auto mt-12 px-5">
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold mb-3  hover:text-orange-600 hover:text-5xl ">
+        <h2 className="text-4xl font-bold mb-3  hover:text-green-400 hover:text-5xl ">
           My Projects
         </h2>
-        <p className="text-xl text-black dark:text-white">
+        <p className="text-xl text-white">
           These are some of the projects I’ve built while learning and growing
           as a frontend developer. They reflect my interest in creating useful
           and modern web experiences. While working on them, I explored React,
@@ -43,7 +44,7 @@ function Projects(props) {
             alt="Project"
             className="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 className="text-xl font-bold mb-2 text-black hover:text-orange-500 dark:text-white hover:text-2xl">
+          <h3 className="text-xl font-bold mb-2 text-black hover:text-green-400 dark:text-white hover:text-2xl">
             FRUIT ECOMMERCE SYSTEM
           </h3>
           <p className="text-black  dark:text-white">
@@ -59,7 +60,7 @@ function Projects(props) {
             alt="Project"
             className="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 className="text-xl font-bold mb-2 text-black dark:text-white hover:text-orange-500 hover:text-2xl">
+          <h3 className="text-xl font-bold mb-2 text-black dark:text-white hover:text-green-400 hover:text-2xl">
             ASTROLOGY WEBSITE
           </h3>
           <p className="text-black  dark:text-white">
@@ -76,7 +77,7 @@ function Projects(props) {
             alt="Project"
             className="w-full h-48 object-cover rounded-md mb-6"
           />
-          <h3 className="text-xl font-bold mb-2 text-black dark:text-white hover:text-orange-500 hover:text-2xl">
+          <h3 className="text-xl font-bold mb-2 text-black dark:text-white hover:text-green-400 hover:text-2xl">
             TRAVELLING WEBSITE
           </h3>
           <p className="text-black dark:text-white ">
@@ -88,6 +89,8 @@ function Projects(props) {
         </div>
       </div>
     </div>
+    </section>
+   
   );
 }
 

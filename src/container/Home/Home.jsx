@@ -24,8 +24,8 @@ function Home(props) {
       {/* <Grid /> */}
       {/* <RotateImgAnimation/> */}
       {/* <HorizontalScrollAnimationMap/>  */}
-       <Homes/>
-       <Projects/>
+       <Homes/> 
+       {/* <Projects/> */}
     </>
   );
 }
