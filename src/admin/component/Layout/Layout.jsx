@@ -133,6 +133,7 @@ export default function Layout({ children }) {
 
   let layoutCategory = [
     { Label: "Category", icon: <CategoryIcon />, to: "/admin/Category" },
+    { Label: "Portfolio", icon: <CategoryIcon />, to: "/admin/Portfolio" },
     // {
     //   Label: "SubCategory",
     //   icon: <AlignVerticalBottomIcon />,

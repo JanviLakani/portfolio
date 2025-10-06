@@ -124,6 +124,37 @@ function Header() {
 
 export default Header;
 
+
+
+
+
+
+// https://slimhamdi.net/tunis/demos/dark.html 
+// https://slimhamdi.net/moscow/demos/index-dark.html
+// https://preview.themeforest.net/item/xfolio-personal-portfolio-cv-resume-html-template/full_screen_preview/59912051
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // https://wp.aqlova.com/bfolio/home-dark/
 // https://codepen.io/tag/background-animation?cursor=ZD0xJm89MCZwPTk=
 // https://codepen.io/kanishkkunal/pen/MYbmzN/

@@ -13,18 +13,22 @@ import Input from "./../../component/CustomComponent/Input/Input";
 import CustomeTable from "../../component/customTable/CustomeTable";
 
 import FileInput from "../../component/CustomComponent/FileInput/FileInput";
-import { useDispatch, useSelector } from "react-redux";
-import { addproData, getproData } from "../../../redux/slice/category.slice";
+import {
+  useAddPortfolioItemMutation,
+  useGetPortfolioListQuery,
+} from "../../../redux/api/portfolioApi";
 
-function Category(props) {
-  const dispatch = useDispatch();
-
-  const vData = useSelector((data) => data.category?.category);
-  console.log("vData ooooooooooooooooooooooo", vData);
-
+function Portfolio(props) {
   const [open, setOpen] = React.useState(false);
   // const [product, setProduct] = useState([]);
   const [update, setUpdate] = useState();
+
+  const { data, error, isLoading } = useGetPortfolioListQuery();
+
+  console.log("data gett", data);
+
+  const [addPortfolio] = useAddPortfolioItemMutation();
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -41,15 +45,13 @@ function Category(props) {
     setUpdate(data);
   };
 
-  useEffect(() => {
-    dispatch(getproData());
-  }, []);
-  const categorySchema = object({
+  const portfolioSchema = object({
     name: string().required(),
+    technology: string().required(),
     description: string().required(),
-    image: mixed()
+    portfolio_image: mixed()
       .required("please upload an image")
-      .test("image", "images must be jpg or jpeg", (value) => {
+      .test("portfolio_image", "images must be jpg or jpeg", (value) => {
         if (typeof value?.url === "string") {
           return true;
         } else {
@@ -57,7 +59,7 @@ function Category(props) {
           return imgtype === "image/png" || imgtype === "image/jpeg";
         }
       })
-      .test("image", "image size must be less than 2 mb", (value) => {
+      .test("portfolio_image", "image size must be less than 2 mb", (value) => {
         if (typeof value?.url === "string") {
           return true;
         } else {
@@ -68,10 +70,12 @@ function Category(props) {
 
   const columns = [
     { field: "name", category: "Name", width: 70 },
-    { field: "description", headerName: "description", width: 130 },
+    { field: "technology", headerName: "Technology", width: 130 },
+    { field: "description", headerName: "Description", width: 130 },
+
     {
-      field: "image",
-      headerName: "image",
+      field: "portfolio_image",
+      headerName: "portfolio_image",
       width: 130,
       renderCell: (params) => (
         <>
@@ -85,7 +89,28 @@ function Category(props) {
         </>
       ),
     },
+
+    // {
+    //   headerName: "action",
+    //   width: 130,
+
+    //   renderCell: (params) => (
+    //     <>
+    //       <IconButton
+    //         aria-label="delete"
+    //         // onClick={() => deletecoupons(params.row.id)}
+    //         onClick={() => deletecoupons(params.row._id)}
+    //       >
+    //         <DeleteIcon />
+    //       </IconButton>
+    //       <IconButton aria-label="edit" onClick={() => handleedit(params.row)}>
+    //         <ModeEditIcon />
+    //       </IconButton>
+    //     </>
+    //   ),
+    // },
   ];
+
   return (
     <React.Fragment>
       <Box
@@ -95,17 +120,17 @@ function Category(props) {
           marginBottom: "50px",
         }}
       >
-        <h1>category</h1>
+        <h1>Portfolio</h1>
 
         <Button variant="outlined" onClick={handleClickOpen}>
-          category
+          Portfolio
         </Button>
       </Box>
 
-      <CustomeTable rows={vData} columns={columns} />
+      <CustomeTable rows={data} columns={columns} />
 
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>category</DialogTitle>
+        <DialogTitle>Portfolio</DialogTitle>
 
         <DialogContent>
           <Formik
@@ -114,8 +139,9 @@ function Category(props) {
                 ? { ...update, resetPssword: update.password }
                 : {
                     name: "",
+                    technology: "",
                     description: "",
-                    image: "",
+                    portfolio_image: "",
                   }
             }
             onSubmit={(values, { resetForm }) => {
@@ -126,11 +152,11 @@ function Category(props) {
 
               let formData = new FormData();
 
-            //   console.log("values", values, Object.entries(values));
-              console.log(values, "<<<<<<<<<<<<<<<VALUES");
+              // console.log("values", values, Object.entries(values));
+              console.log(values, "VALUES");
 
               Object.entries(values).map(([key, val]) => {
-                if (key === "image") {
+                if (key === "portfolio_image") {
                   if (val instanceof File) {
                     formData.append(key, val);
                   }
@@ -139,41 +165,43 @@ function Category(props) {
                 }
               });
 
-              console.log("updateeeeeeee" , update);
-              
-
               if (update) {
                 let updetedData = {};
 
-                if (typeof values.image === "string") {
+                if (typeof values.portfolio_image === "string") {
                   updetedData = { ...values };
                 } else {
                   updetedData = {
                     ...values,
-                    image: values.image.name,
+                    coupon_image: values.portfolio_image.name,
                   };
                 }
                 updateApplycoupons({ _id: values._id, body: formData });
               } else {
-                dispatch(addproData(values))
+                addPortfolio(formData);
               }
 
               // resetForm();
               handleClose(resetForm);
             }}
-            validationSchema={categorySchema}
+            validationSchema={portfolioSchema}
           >
             {({ values }) => (
               <Form id="submit-sct">
-                <Input label="name" name="name" id="name" />
+                <Input label="name" name="name" />
 
+                <TextArea
+                  label="technology"
+                  name="technology"
+                  id="technology"
+                />
                 <TextArea
                   label="description"
                   name="description"
                   id="description"
                 />
 
-                <FileInput name="image" label="Upload Image" />
+                <FileInput name="portfolio_image" label="Upload Image" />
 
                 <DialogActions>
                   <Button onClick={handleClose}>Cancel</Button>
@@ -191,4 +219,4 @@ function Category(props) {
   );
 }
 
-export default Category;
+export default Portfolio;

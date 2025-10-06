@@ -1,0 +1,62 @@
+{
+  "portfolio": [
+    {
+      "id": "proj001",
+      "name": "Weather App",
+      "technology": [
+        "React",
+        "Node"
+      ],
+      "description": "A web app to display real-time weather information for any city.",
+      "image": "Astrology.jpeg"
+    },
+    {
+      "id": "proj002",
+      "name": "Task Manager",
+      "technology": [
+        "React",
+        "Node",
+        "MongoDB"
+      ],
+      "description": "An application to create, update, and delete tasks with user authentication.",
+      "image": "business_woman.jpeg"
+    },
+    {
+      "id": "proj003",
+      "name": "Astrology Hub",
+      "technology": [
+        "React",
+        "Node",
+        "Express"
+      ],
+      "description": "A platform providing astrology charts, horoscopes, and daily predictions.",
+      "image": "men.webp"
+    }
+  ],
+  "category": [
+    {
+      "id": "zxcv",
+      "name": "janvi",
+      "description": "address",
+      "image": "men.webp"
+    },
+    {
+      "id": "7794",
+      "name": "rr",
+      "description": "rr",
+      "image": "Astrology.jpeg"
+    },
+    {
+      "id": "b87e",
+      "name": "333",
+      "description": "333",
+      "image": "business_woman.jpeg"
+    },
+    {
+      "id": "e5b3",
+      "name": "phone",
+      "description": "phone prise",
+      "image": "Astrology.jpeg"
+    }
+  ]
+}

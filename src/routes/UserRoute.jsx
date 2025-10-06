@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../container/Home/Home";
 import Header from "../component/Header/Header";
 import { ThemeContext } from "../context/ThemeContext";
-// import Projects from "../component/Projects/Projects";
+import Projects from "../component/Projects/Projects";
 
 function UserRoute(props) {
 
@@ -14,7 +14,7 @@ function UserRoute(props) {
       <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
-       {/* <Route path="/project" element={<Projects />} /> */}
+       <Route path="/project" element={<Projects />} />
       {/* <Route path="/" element={<Header/>} />  */}
 
 
