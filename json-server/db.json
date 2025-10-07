@@ -1,36 +1,53 @@
 {
   "portfolio": [
     {
-      "id": "proj001",
-      "name": "Weather App",
-      "technology": [
-        "React",
-        "Node"
-      ],
-      "description": "A web app to display real-time weather information for any city.",
+      "id": "25a5",
+      "name": "aaradhya",
+      "technology": "react node",
+      "description": "surat",
+      "image": "office_girl.jpg"
+    },
+    {
+      "name": "fighter",
+      "technology": "asas",
+      "description": " ddd",
+      "image": "Astrology.jpeg",
+      "id": "fff6"
+    },
+    {
+      "name": "fighter",
+      "technology": "janvi",
+      "description": "janvi",
+      "image": "office_girl.jpg",
+      "id": "1edf"
+    },
+    {
+      "name": "fighter",
+      "technology": "fdf fgfgokok",
+      "description": "fgfgokok",
+      "image": "Astrology.jpeg",
+      "id": "1e74"
+    },
+    {
+      "id": "a450",
+      "name": "fruitable project",
+      "technology": "react node",
+      "description": "use css , tailwind css javascript",
       "image": "Astrology.jpeg"
     },
     {
-      "id": "proj002",
-      "name": "Task Manager",
-      "technology": [
-        "React",
-        "Node",
-        "MongoDB"
-      ],
-      "description": "An application to create, update, and delete tasks with user authentication.",
-      "image": "business_woman.jpeg"
+      "name": "counter app",
+      "technology": "javascript",
+      "description": "use array function state dispatch useselector",
+      "image": "travelling.jpeg",
+      "id": "f168"
     },
     {
-      "id": "proj003",
-      "name": "Astrology Hub",
-      "technology": [
-        "React",
-        "Node",
-        "Express"
-      ],
-      "description": "A platform providing astrology charts, horoscopes, and daily predictions.",
-      "image": "men.webp"
+      "id": "0fe8",
+      "name": "www",
+      "technology": "www",
+      "description": "www",
+      "image": "Astrology.jpeg"
     }
   ],
   "category": [
@@ -56,6 +73,12 @@
       "id": "e5b3",
       "name": "phone",
       "description": "phone prise",
+      "image": "Astrology.jpeg"
+    },
+    {
+      "id": "b528",
+      "name": "fighter",
+      "description": "5t",
       "image": "Astrology.jpeg"
     }
   ]
