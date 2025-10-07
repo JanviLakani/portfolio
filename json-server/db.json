@@ -16,24 +16,10 @@
     },
     {
       "name": "fighter",
-      "technology": "janvi",
+      "technology": "janviiiii",
       "description": "janvi",
-      "image": "office_girl.jpg",
+      "image": "business_woman.jpeg",
       "id": "1edf"
-    },
-    {
-      "name": "fighter",
-      "technology": "fdf fgfgokok",
-      "description": "fgfgokok",
-      "image": "Astrology.jpeg",
-      "id": "1e74"
-    },
-    {
-      "id": "a450",
-      "name": "fruitable project",
-      "technology": "react node",
-      "description": "use css , tailwind css javascript",
-      "image": "Astrology.jpeg"
     },
     {
       "name": "counter app",
@@ -48,6 +34,34 @@
       "technology": "www",
       "description": "www",
       "image": "Astrology.jpeg"
+    },
+    {
+      "name": "pathaan",
+      "technology": "fgfg",
+      "description": "fgfgokok",
+      "image": "code.jpg",
+      "id": "8aa0"
+    },
+    {
+      "id": "aff4",
+      "name": "pathaan",
+      "technology": "ddd",
+      "description": "dddd",
+      "image": "Astrology.jpeg"
+    },
+    {
+      "id": "1984",
+      "name": "janvi",
+      "technology": "gfgf",
+      "description": "gfgfgfgf",
+      "image": "Astrology.jpeg"
+    },
+    {
+      "id": "e53a",
+      "name": "sanvi",
+      "technology": "native",
+      "description": "surat",
+      "image": "code.jpg"
     }
   ],
   "category": [

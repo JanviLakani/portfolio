@@ -16,6 +16,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 
 import CategoryIcon from "@mui/icons-material/Category";
 
@@ -133,7 +134,7 @@ export default function Layout({ children }) {
 
   let layoutCategory = [
     { Label: "Category", icon: <CategoryIcon />, to: "/admin/Category" },
-    { Label: "Portfolio", icon: <CategoryIcon />, to: "/admin/Portfolio" },
+    { Label: "Portfolio", icon: <BusinessCenterIcon />, to: "/admin/Portfolio" },
     // {
     //   Label: "SubCategory",
     //   icon: <AlignVerticalBottomIcon />,
