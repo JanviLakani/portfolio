@@ -31,7 +31,7 @@ function Header() {
               className="w-10 h-10 rounded-full"
             />
             <div>
-              <h2 className="font-bold text-gray-800">Janvi</h2>
+              <h2 className="font-bold text-gray-800 dark:text-white">Janvi Lakani</h2>
               <p className="text-green-500 text-xs font-semibold">
                 React Developer
               </p>

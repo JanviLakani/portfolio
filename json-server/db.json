@@ -9,16 +9,9 @@
     },
     {
       "name": "fighter",
-      "technology": "asas",
-      "description": " ddd",
-      "image": "Astrology.jpeg",
-      "id": "fff6"
-    },
-    {
-      "name": "fighter",
       "technology": "janviiiii",
       "description": "janvi",
-      "image": "business_woman.jpeg",
+      "image": "office_girl.jpg",
       "id": "1edf"
     },
     {
@@ -55,6 +48,13 @@
       "technology": "native",
       "description": "surat",
       "image": "code.jpg"
+    },
+    {
+      "id": "d6ac",
+      "name": "kjkkjikjikjik",
+      "technology": "jkjkjkjk",
+      "description": "kknmnm",
+      "image": "travelling.jpeg"
     }
   ],
   "category": [
