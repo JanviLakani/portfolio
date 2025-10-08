@@ -25,7 +25,7 @@ function Projects(props) {
   console.log("data Projects page :", data);
 
   return (
-    <section className="bg-black text-white min-h-screen flex items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center z-555">
+    <section className="bg-black text-white min-h-screen flex items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center z-555 pt-20">
       <div className="container mx-auto mt-12 px-5">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold mb-3  hover:text-green-400 hover:text-5xl ">
