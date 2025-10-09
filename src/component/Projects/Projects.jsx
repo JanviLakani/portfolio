@@ -38,7 +38,7 @@ function Projects(props) {
             and modern web experiences. While working on them, I explored React,
             JavaScript ,TailwindCSS, bootstrap5 and CSS5 html in depth. As a
             fresher, I’m excited to learn more and create projects that people
-            love to use
+            love to use fruitable,bodoo,Astrological website
           </p>
         </div>
 
