@@ -3,6 +3,8 @@ import { RiMenu5Line } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Homes() {
   return (
@@ -47,13 +49,17 @@ function Homes() {
             </a>
 
             <a
-              href="#"
+              href="mailto:lakanijanvi1999@gmail.com"
               className="w-8 sm:w-11 md:w-8 lg:w-10 h-8 sm:h-11 md:h-8 lg:h-10 flex items-center justify-center rounded-full bg-regal-lightgray hover:bg-white hover:text-black transition"
-            ></a>
+            >
+              <IoIosMail />
+            </a>
             <a
               href="#"
               className="w-8 sm:w-11 md:w-8 lg:w-10 h-8 sm:h-11 md:h-8 lg:h-10 flex items-center justify-center rounded-full bg-regal-lightgray hover:bg-white hover:text-black transition"
-            ></a>
+            >
+              <FaWhatsapp/>
+            </a>
           </div>
         </div>
 
@@ -64,7 +70,7 @@ function Homes() {
             Hello! I'm Janvi
           </p>
           <h1 className=" text-center md:text-left text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold leading-tight mb-4 ">
-            Empower Code <br /> Intelligence
+            React Js <br /> Developer
           </h1>
           <p className="text-gray-400 mb-8 text-center md:text-left">
             Hello! I’m a passionate Frontend Developer skilled in React,
@@ -76,8 +82,8 @@ function Homes() {
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center align-items-center
 ">
             <div className="bg-regal-gray p-6 rounded-xl shadow-md text-center ">
-              <h2 className="text-2xl lg:text-3xl font-bold">10+</h2>
-              <p className="text-gray-400 text-xs lg:text-sm">Years in AI Development</p>
+              <h2 className="text-2xl lg:text-3xl font-bold">4+</h2>
+              <p className="text-gray-400 text-xs lg:text-sm">project in react</p>
             </div>
             <div className="bg-regal-gray p-6 rounded-xl shadow-md text-center">
               <h2 className="text-3xl font-bold">500+</h2>

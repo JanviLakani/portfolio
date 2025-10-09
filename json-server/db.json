@@ -1,45 +1,31 @@
 {
   "portfolio": [
     {
-      "name": "aaradhya",
+      "name": "FRUIT ECOMMERCE SYSTEM",
       "technology": "react node",
-      "description": "surat",
-      "image": "business_woman.jpeg",
+      "description": "Designed and developed a responsive Fruit Ecommerce website using ReactJS and Material UI, allowing users to browse fruits, view product details, and manage their cart. Implemented Context API for smooth component communication and Redux Toolkit with redux-thunk and redux-persist for efficient global state management and persistent user data, ensuring a fast and seamless shopping experience.",
+      "image": "hero-img-1.png",
       "id": "25a5"
     },
     {
-      "name": "fighter",
-      "technology": "janviiiii",
-      "description": "janvi",
-      "image": "office_girl.jpg",
+      "name": "ASTROLOGY WEBSITE,",
+      "technology": "css ,Bootstrap ,figma",
+      "description": "Implemented Figma to Bootstrap conversion for a\nresponsive astrology website with user-friendly UI Implemented Figma to Bootstrap conversion for a\nresponsive astrology website with user-friendly UI",
+      "image": "Astrology.jpeg",
       "id": "1edf"
     },
     {
-      "name": "counter app",
-      "technology": "javascript",
-      "description": "use array function state dispatch useselector",
+      "name": "TRAVELLING WEBSITE",
+      "technology": "javascript,html,figma",
+      "description": "Developed a responsive travel website by converting\nFigma designs into HTML & CSS with clean and\nmodern UI Developed a responsive travel website by converting\nFigma designs into HTML & CSS with clean and\nmodern UI",
       "image": "travelling.jpeg",
       "id": "f168"
-    },
-    {
-      "name": "pathaan",
-      "technology": "fgfg",
-      "description": "fgfgokok",
-      "image": "code.jpg",
-      "id": "8aa0"
     },
     {
       "id": "aff4",
       "name": "pathaan",
       "technology": "ddd",
       "description": "dddd",
-      "image": "Astrology.jpeg"
-    },
-    {
-      "id": "1984",
-      "name": "janvi",
-      "technology": "gfgf",
-      "description": "gfgfgfgf",
       "image": "Astrology.jpeg"
     },
     {

@@ -4,6 +4,9 @@ import Home from "../container/Home/Home";
 import Header from "../component/Header/Header";
 import { ThemeContext } from "../context/ThemeContext";
 import Projects from "../component/Projects/Projects";
+import ProjectDetail from "../component/ProjectDetail/ProjectDetail";
+
+
 
 function UserRoute(props) {
 
@@ -16,6 +19,8 @@ function UserRoute(props) {
       <Route path="/" element={<Home />} />
        <Route path="/project" element={<Projects />} />
       {/* <Route path="/" element={<Header/>} />  */}
+        <Route path="/ProjectDetail/:id" element={<ProjectDetail/>} /> 
+         {/* <Route path="/ProjectDetail/" element={<ProjectDetail/>} />  */}
 
 
     </Routes>

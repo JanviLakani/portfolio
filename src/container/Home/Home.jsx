@@ -13,6 +13,7 @@ import Portfolio from "../../component/Portfolio/Portfolio";
 import Projects from "../../component/Projects/Projects";
 
 
+
 function Home(props) {
   return (
     <>
@@ -25,7 +26,8 @@ function Home(props) {
       {/* <RotateImgAnimation/> */}
       {/* <HorizontalScrollAnimationMap/>  */}
        <Homes/> 
-       {/* <Projects/> */}
+       <Projects/>
+       
     </>
   );
 }

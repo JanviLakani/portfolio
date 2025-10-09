@@ -19,6 +19,7 @@
 
 import React from "react";
 import { useGetPortfolioListQuery } from "../../redux/api/portfolioApi";
+import { NavLink } from "react-router-dom";
 
 function Projects(props) {
   const { data, error, isLoading } = useGetPortfolioListQuery();
@@ -28,7 +29,7 @@ function Projects(props) {
     <section className="bg-black text-white min-h-screen flex items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center z-555 pt-20">
       <div className="container mx-auto mt-12 px-5">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold mb-3  hover:text-green-400 hover:text-5xl ">
+          <h2 className="text-4xl font-bold mb-3  ">
             My Projects
           </h2>
           <p className="text-xl text-white">
@@ -43,22 +44,36 @@ function Projects(props) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {data?.map((projectData) => (
-            <div className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center">
+            // <NavLink key={projectData.id} to={"/ProjectDetail"} className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center">
+             <NavLink key={`/ProjectDetail/${projectData.id}`} to={`/ProjectDetail/${projectData.id}`} className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center relative group ">
               <img
                 src={`/public/img/${projectData.image}`}
                 alt="Project"
-                className="w-full h-48 object-cover rounded-lg mb-6"
+                className="w-full h-48 object-cover rounded-lg mb-6 " 
               />
-              <h3 className="text-xl font-bold mb-2 text-black hover:text-green-400 dark:text-white hover:text-2xl">
+              {/* <h3 className="text-xl font-bold mb-2 text-black dark:text-white ">
                 {projectData?.name}
-              </h3>
+              </h3> */}
               <p className="text-black  dark:text-white">
-                {projectData?.description}
+              
+                  {projectData?.description?.length > 30
+          ? `${projectData.description.slice(0, 20)}...read more`
+          : projectData?.description}
               </p>
-            </div>
+            </NavLink>
           ))}
-          
-          {/* <div className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center">
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;
+
+// https://startup.demo.nextjstemplates.com/
+
+{
+  /* <div className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center">
             <img
               src="/public/img/all_fruits.jpg"
               alt="Project"
@@ -72,9 +87,11 @@ function Projects(props) {
               Material UI, and Context API with state management handled by
               Redux Toolkit, redux-thunk, and redux-persist
             </p>
-          </div> */}
+          </div> */
+}
 
-          {/* <div className="bg-regal-offwhite dark:bg-regal-offBlack  p-4 rounded-xl text-center ">
+{
+  /* <div className="bg-regal-offwhite dark:bg-regal-offBlack  p-4 rounded-xl text-center ">
             <img
               src="/public/img/Astrology.jpeg"
               alt="Project"
@@ -89,9 +106,11 @@ function Projects(props) {
               prototypes into a responsive Bootstrap-based astrology website
               with seamless user experience
             </p>
-          </div> */}
+          </div> */
+}
 
-          {/* <div className=" bg-regal-offwhite dark:bg-regal-offBlack  p-4 rounded-xl text-center">
+{
+  /* <div className=" bg-regal-offwhite dark:bg-regal-offBlack  p-4 rounded-xl text-center">
             <img
               src="/public/img/travelling.jpeg"
               alt="Project"
@@ -106,13 +125,51 @@ function Projects(props) {
               Figma-to-HTML/CSS conversion for a responsive travel website
               featuring a clean and user-friendly interface
             </p>
-          </div> */}
-        </div>
-      </div>
-    </section>
-  );
+          </div> */
 }
 
-export default Projects;
 
-// https://startup.demo.nextjstemplates.com/
+// function Projects(props) {
+//   const { data, error, isLoading } = useGetPortfolioListQuery();
+//   console.log("data Projects page :", data);
+
+//   return (
+//     <section className="bg-black text-white min-h-screen flex items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center z-555 pt-20">
+//       <div className="container mx-auto mt-12 px-5">
+//         <div className="text-center mb-10">
+//           <h2 className="text-4xl font-bold mb-3  hover:text-green-400 hover:text-5xl ">
+//             My Projects
+//           </h2>
+//           <p className="text-xl text-white">
+//             These are some of the projects I’ve built while learning and growing
+//             as a frontend developer. They reflect my interest in creating useful
+//             and modern web experiences. While working on them, I explored React,
+//             JavaScript ,TailwindCSS, bootstrap5 and CSS5 html in depth. As a
+//             fresher, I’m excited to learn more and create projects that people
+//             love to use
+//           </p>
+//         </div>
+
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+//           {data?.map((projectData) => (
+//             <div className="bg-regal-offwhite dark:bg-regal-offBlack p-4 rounded-xl text-center">
+//               <img
+//                 src={`/public/img/${projectData.image}`}
+//                 alt="Project"
+//                 className="w-full h-48 object-cover rounded-lg mb-6"
+//               />
+//               <h3 className="text-xl font-bold mb-2 text-black hover:text-green-400 dark:text-white hover:text-2xl">
+//                 {projectData?.name}
+//               </h3>
+//               <p className="text-black  dark:text-white">
+//                 {projectData?.description}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Projects;
