@@ -32,7 +32,7 @@ function ProjectimagesSwiper(props) {
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 50,
           },
         }}

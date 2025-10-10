@@ -31,7 +31,7 @@
 import React, { useEffect, useState } from "react";
 import { useGetPortfolioListQuery } from "../../redux/api/portfolioApi";
 import { useParams } from "react-router-dom";
-// import ProjectimagesSwiper from "./ProjectimagesSwiper";
+import ProjectimagesSwiper from "./ProjectimagesSwiper";
 
 function ProjectDetail(props) {
   const [proData, setProData] = useState();
@@ -54,6 +54,7 @@ function ProjectDetail(props) {
   }, [data]);
 
   return (
+    <>
     <section className="bg-black text-white min-h-screen flex justify-center items-center bg-[url('/public/img/vactor7.png')] bg-cover bg-center py-16">
       <div className="container mx-auto max-w-6xl p-8 bg-regal-offwhite dark:bg-regal-offBlack rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
@@ -76,9 +77,13 @@ function ProjectDetail(props) {
           {proData?.description}
         </div>
 
-        {/* <ProjectimagesSwiper/>  */}
+       
       </div>
+      
     </section>
+
+     <ProjectimagesSwiper/> 
+     </>
   );
 }
 
